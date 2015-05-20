@@ -42,8 +42,8 @@ public class PaginaEditor extends HttpServlet {
 			out.append("<p>Nome <input id=\"txt_n\" name=\"nome\" type=\"text\" /> </p>");
 			out.append("<p>Cognome <input id=\"txt_c\" name=\"cognome\" type=\"text\" /> </p>");
 			out.append("<p>Telefono <input id=\"txt_t\" name=\"telefono\" type=\"text\" /> </p>");
-			out.append("<p>Indirizzo <input id=\"txt_t\" name=\"telefono\" type=\"text\" /> </p>");
-			out.append("<p>Età <input id=\"txt_t\" name=\"telefono\" type=\"text\" /> </p>");
+			out.append("<p>Indirizzo <input id=\"txt_t\" name=\"indirizzo\" type=\"text\" /> </p>");
+			out.append("<p>Età <input id=\"txt_t\" name=\"eta\" type=\"text\" /> </p>");
 			
 			out.append(" <p> <input type=\"submit\" name=\"salva\" value=\"salva\"> "
 					 + " 	 <input type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
