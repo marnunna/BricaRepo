@@ -25,7 +25,7 @@ public class PersistenzaClass {
 		String DRIVER = "com.mysql.jdbc.Driver";
 		
 		// Indirizzo del database.
-		String DB_URL = "jdbc:mysql://localhost:3306/rubrica";
+		String DB_URL = "jdbc:mysql://127.8.48.2:3306/brica";
 		
 		try {
 			// Carico il driver.
@@ -42,7 +42,7 @@ public class PersistenzaClass {
 		try {
 			
 			// Apro la connessione verso il database.
-			connection = DriverManager.getConnection(DB_URL, "admRubrica", "rubricapass");
+			connection = DriverManager.getConnection(DB_URL, "adminH9dFXQI", "etzirpsMkDUi");
 			
 			// Ottengo lo Statement per interagire con il database.
 			Statement statement = connection.createStatement();
