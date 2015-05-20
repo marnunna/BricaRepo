@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class PaginaPrincipale
  */
 @WebServlet(name = "PaginaPrincipale",urlPatterns = {"/PaginaPrincipale"})
-@MultipartConfig
 
 public class PaginaPrincipale extends HttpServlet {
 	

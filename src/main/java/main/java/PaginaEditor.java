@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class PaginaEditor
  */
 @WebServlet(name = "PaginaEditor",urlPatterns = {"/PaginaEditor/*"})
-@MultipartConfig
+
 
 public class PaginaEditor extends HttpServlet {
 	private static final long serialVersionUID = 1L;
