@@ -1,6 +1,6 @@
 package main.java;
 
-
+import brica.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Vector;
@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 public class PaginaPrincipale extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
-	static ModelloTabellaContatti tabella;
+	public static ModelloTabellaContatti tabella;
 	static PersistenzaClass pc;	
     /**
      * @see HttpServlet#HttpServlet()

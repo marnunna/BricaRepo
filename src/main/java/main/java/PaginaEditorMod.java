@@ -1,5 +1,6 @@
 package main.java;
 
+import brica.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
