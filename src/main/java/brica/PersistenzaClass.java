@@ -17,7 +17,11 @@ import java.util.Vector;
 
 
 public class PersistenzaClass {
-	 
+    public static final String USERNAME = System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
+    public static final String PASSWORD = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
+    public static final String HOST = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
+    public static final String PORT = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
+    public static final String NAME = "brica";
 	
 	public void daDbALista() {
 				
@@ -25,7 +29,7 @@ public class PersistenzaClass {
 		String DRIVER = "com.mysql.jdbc.Driver";
 		
 		// Indirizzo del database.
-		String DB_URL = "jdbc:mysql://127.8.48.2:3306/brica";
+		String DB_URL = "jdbc:mysql://"+HOST+":"+PORT+"/"+NAME;
 		
 		try {
 			// Carico il driver.
@@ -42,7 +46,7 @@ public class PersistenzaClass {
 		try {
 			
 			// Apro la connessione verso il database.
-			connection = DriverManager.getConnection(DB_URL, "adminH9dFXQI", "etzirpsMkDUi");
+			connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD );
 			
 			// Ottengo lo Statement per interagire con il database.
 			Statement statement = connection.createStatement();
