@@ -1,6 +1,7 @@
 package main.java;
 
 import brica.*;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -57,7 +58,9 @@ public class PaginaEditorMod extends HttpServlet {
 			
 			out.append("</form></html></body>");
 			
-		} 
+		}  catch (Exception e) {
+			
+		}
     	
     }
 

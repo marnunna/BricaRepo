@@ -1,6 +1,7 @@
 package main.java;
 
 import brica.*;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Vector;
@@ -63,7 +64,8 @@ public class PaginaPrincipale extends HttpServlet {
 	       		out.append("</tr>");
 	        		
            		
-			}
+			}  
+			
 			out.append("</table>");
 			
 			
@@ -74,7 +76,9 @@ public class PaginaPrincipale extends HttpServlet {
 			
 			out.append("</form></html></body>");
 			
-		} 
+		} catch (Exception e) {
+			
+		}
     	
     }
     

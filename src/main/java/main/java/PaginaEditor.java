@@ -50,7 +50,9 @@ public class PaginaEditor extends HttpServlet {
 			
 			out.append("</form></html></body>");
 			
-		} 
+		} catch (Exception e) {
+			
+		}
     	
     }
 
