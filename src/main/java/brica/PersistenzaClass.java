@@ -105,7 +105,7 @@ public class PersistenzaClass {
 			String DRIVER = "com.mysql.jdbc.Driver";		
 				
 			// Indirizzo del database.
-			String DB_URL = "jdbc:mysql://127.8.48.2:3306/brica";
+			String DB_URL = "jdbc:mysql://"+HOST+":"+PORT+"/"+NAME;
 				
 			try {
 				// Carico il driver.
@@ -121,7 +121,7 @@ public class PersistenzaClass {
 				
 			try {
 				// Apro la connessione verso il database.
-				connection = DriverManager.getConnection(DB_URL, "adminH9dFXQI", "etzirpsMkDUi");
+				connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD );
 				// Ottengo lo statement per interagire con il database mettendo anche stringhe con apici e apostrofi
 				PreparedStatement statement;
 				statement = connection.prepareStatement("truncate contatti;");
