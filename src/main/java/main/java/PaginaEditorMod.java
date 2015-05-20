@@ -93,11 +93,11 @@ public class PaginaEditorMod extends HttpServlet {
 			PaginaPrincipale.pc.daListaADb();
 			
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaPrincipale");
-			dispatcher.include(request, response);
+			dispatcher.forward(request, response);
 		
 	     } else if (request.getParameter("annulla") != null) {
 	    	RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaPrincipale");
-			dispatcher.include(request, response);
+			dispatcher.forward(request, response);
 	    	 
 	     } else {
 	    	doRequest(request, response);
