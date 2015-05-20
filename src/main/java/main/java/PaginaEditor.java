@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class PaginaEditor
  */
-@WebServlet(name = "PaginaEditor",urlPatterns = {"/PaginaEditor/*"})
+@WebServlet(name = "PaginaEditor",urlPatterns = {"/PaginaEditor"})
 
 
 public class PaginaEditor extends HttpServlet {
