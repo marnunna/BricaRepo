@@ -101,7 +101,7 @@ public class PaginaPrincipale extends HttpServlet {
 
 		 if (request.getParameter("nuovo") != null) {
 			 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaEditor");
-			 dispatcher.include(request, response);
+			 dispatcher.forward(request, response);
 				   
 	     } else if (request.getParameter("modifica") != null) {
 	    	 
@@ -110,7 +110,7 @@ public class PaginaPrincipale extends HttpServlet {
 	    	 Persona contatto= tabella.getContatto(rigaSel);
 			 request.setAttribute("contatto", contatto);
 	    	 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaEditorMod");
-			 dispatcher.include(request, response);
+			 dispatcher.forward(request, response);
 	    	 } catch (Exception e) {
 	    		 doRequest(request, response);
 	    	 }
