@@ -45,11 +45,11 @@ public class PaginaPrincipale extends HttpServlet {
 	        
 			out.append("<html>");
 			out.append("<head>");
-			out.append("<title>Brica La rubrica</title>");
-			out.append("<link rel=\"stylesheet\" href=\"fogliodistile.css\" />");
+			out.append("	<title>Brica La rubrica</title>");
+			out.append("	<link rel=\"stylesheet\" href=\"fogliodistile.css\" />");
 			out.append("</head>");
 			out.append("<body>");
-			out.append(" <form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
+			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
 			
 			for (int i=0 ; i < lista.size(); i++) {
 				
@@ -60,18 +60,18 @@ public class PaginaPrincipale extends HttpServlet {
 				String telefono = contatto.getTelefono();
 				
 				// tabella di formattazione
-				out.append("<table border=\"1\">");
-	       		out.append("<tr>");
-	       		out.append("<td> <input id=\"rig"+i+"\" name=\"sel\" type=\"radio\" value=\""+i+"\" /> <td>");
-	       		out.append("<td>&nbsp" + nome + "&nbsp</td>");
-	       		out.append("<td>&nbsp" + cognome + "&nbsp</td>");
-	       		out.append("<td>&nbsp" + telefono + "&nbsp</td>");
-	       		out.append("</tr>");
+				out.append("		<table border=\"1\">");
+	       		out.append("			<tr>");
+	       		out.append("			<td> <input id=\"rig"+i+"\" name=\"sel\" type=\"radio\" value=\""+i+"\" /> <td>");
+	       		out.append("			<td>&nbsp" + nome + "&nbsp</td>");
+	       		out.append("			<td>&nbsp" + cognome + "&nbsp</td>");
+	       		out.append("			<td>&nbsp" + telefono + "&nbsp</td>");
+	       		out.append("			</tr>");
 	        		
            		
 			}  
 			
-			out.append("</table>");
+			out.append("			</table>");
 			
 			
 			out.append(" <p> <input type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
@@ -79,7 +79,9 @@ public class PaginaPrincipale extends HttpServlet {
 					 + " <input type=\"submit\" name=\"elimina\" value=\"elimina\"> </p> ");
 			
 			
-			out.append("</form></html></body>");
+			out.append("	</form>"
+					+ "</body>"
+					+ "</html>");
 			
 		} catch (Exception e) {
 			
