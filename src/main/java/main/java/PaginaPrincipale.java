@@ -46,7 +46,7 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("<html>");
 			out.append("<head>");
 			out.append("	<title>Brica La Rubrica</title>");
-			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"/css/fogliodistile.css\" />");
+			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
 			out.append("</head>");
 			out.append("<body>");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
