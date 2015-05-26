@@ -50,6 +50,7 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("</head>");
 			out.append("<body>");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
+			out.append("		<div>");
 			
 			for (int i=0 ; i < lista.size(); i++) {
 				
@@ -60,7 +61,7 @@ public class PaginaPrincipale extends HttpServlet {
 				String telefono = contatto.getTelefono();
 				
 				// tabella di formattazione
-				out.append("		<div>");
+				
 				out.append("		<table border=\"1\">");
 	       		out.append("			<tr>");
 	       		out.append("			<td> <input id=\"rig"+i+"\" name=\"sel\" type=\"radio\" value=\""+i+"\" /> <td>");
@@ -68,14 +69,14 @@ public class PaginaPrincipale extends HttpServlet {
 	       		out.append("			<td>&nbsp" + cognome + "&nbsp</td>");
 	       		out.append("			<td>&nbsp" + telefono + "&nbsp</td>");
 	       		out.append("			</tr>");
-	       		out.append("		</div>");
+	       		
 	       		
 	        		
            		
 			}  
 			
 			out.append("			</table>");
-			
+			out.append("		</div>");
 			
 			out.append(" <p> <input type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
 					 + " <input type=\"submit\" name=\"modifica\" value=\"modifica\"> "
