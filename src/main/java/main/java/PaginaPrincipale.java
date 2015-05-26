@@ -49,7 +49,7 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"/brica/css/fogliodistile.css\" />");
 			out.append("</head>");
 			out.append("<body>");
-			out.append("<p>"+request.getContextPath()+"</p>");
+			out.append("<p> Dio Bono </p>");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
 			
 			for (int i=0 ; i < lista.size(); i++) {
