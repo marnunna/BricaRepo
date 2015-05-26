@@ -60,6 +60,7 @@ public class PaginaPrincipale extends HttpServlet {
 				String telefono = contatto.getTelefono();
 				
 				// tabella di formattazione
+				out.append("		<div>");
 				out.append("		<table border=\"1\">");
 	       		out.append("			<tr>");
 	       		out.append("			<td> <input id=\"rig"+i+"\" name=\"sel\" type=\"radio\" value=\""+i+"\" /> <td>");
@@ -67,6 +68,7 @@ public class PaginaPrincipale extends HttpServlet {
 	       		out.append("			<td>&nbsp" + cognome + "&nbsp</td>");
 	       		out.append("			<td>&nbsp" + telefono + "&nbsp</td>");
 	       		out.append("			</tr>");
+	       		out.append("		</div>");
 	        		
            		
 			}  
