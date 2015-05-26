@@ -49,8 +49,9 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
 			out.append("</head>");
 			out.append("<body>");
+			out.append("	<div>");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
-			out.append("		<div>");
+			
 			
 			for (int i=0 ; i < lista.size(); i++) {
 				
@@ -76,7 +77,7 @@ public class PaginaPrincipale extends HttpServlet {
 			}  
 			
 			out.append("			</table>");
-			out.append("		</div>");
+			
 			
 			out.append(" <p> <input type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
 					 + " <input type=\"submit\" name=\"modifica\" value=\"modifica\"> "
@@ -84,6 +85,7 @@ public class PaginaPrincipale extends HttpServlet {
 			
 			
 			out.append("	</form>"
+					+ "</div>"
 					+ "</body>"
 					+ "</html>");
 			
