@@ -43,7 +43,12 @@ public class PaginaPrincipale extends HttpServlet {
     			
 		try (PrintWriter out = response.getWriter()) {
 	        
-			out.append("<html><body>");
+			out.append("<html>");
+			out.append("<head>");
+			out.append("<title>Brica La rubrica</title>");
+			out.append("<link rel=\"stylesheet\" href=\"fogliodistile\" />");
+			out.append("</head>");
+			out.append("<body>");
 			out.append(" <form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
 			
 			for (int i=0 ; i < lista.size(); i++) {
