@@ -85,7 +85,7 @@ public class PaginaPrincipale extends HttpServlet {
 					+ "</body>"
 					+ "</html>");
 			
-			System.out.println(request.getContextPath()) ;
+			
 			
 		} catch (Exception e) {
 			
@@ -99,6 +99,7 @@ public class PaginaPrincipale extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		System.out.println(request.getContextPath()) ;
 		doRequest(request, response);
 		
 	}
@@ -109,7 +110,7 @@ public class PaginaPrincipale extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doRequestGet(request, response);
-
+		System.out.println(request.getContextPath()) ;
 		 if (request.getParameter("nuovo") != null) {
 			 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaEditor");
 			 dispatcher.forward(request, response);
@@ -138,7 +139,7 @@ public class PaginaPrincipale extends HttpServlet {
 	    	 }
 
 	     }  else {
-	    	 
+	    	 System.out.println(request.getContextPath()) ;
 	    	 doRequest(request, response);
 	     }
 		 
