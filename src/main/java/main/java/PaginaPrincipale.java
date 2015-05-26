@@ -85,6 +85,8 @@ public class PaginaPrincipale extends HttpServlet {
 					+ "</body>"
 					+ "</html>");
 			
+			System.out.println(request.getContextPath()) ;
+			
 		} catch (Exception e) {
 			
 		}
