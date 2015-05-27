@@ -55,7 +55,7 @@ h1 {
 	margin:auto;	
 }
 
-#button {
+.button {
 	position:relative;
 	left:285;
 	width:35px;
