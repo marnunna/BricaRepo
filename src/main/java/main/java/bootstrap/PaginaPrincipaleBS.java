@@ -56,7 +56,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
 			out.append("	<div class=\"row\">");
 			out.append("	<div class=\"col-md-3\"></div>");
 			out.append("	<div class=\"col-md-6\">");
-			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
+			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipaleBS\"> ");
 			out.append("		<table id=\"contatti\">");
 			out.append(" <tr> <th>Selezione</th> <th>Nome</th> <th>Cognome</th> <th>Telefono</th> </tr>");
 			
@@ -121,7 +121,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doRequestGet(request, response);
 		 if (request.getParameter("nuovo") != null) {
-			 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaEditor");
+			 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaEditorBS");
 			 dispatcher.forward(request, response);
 				   
 	     } else if (request.getParameter("modifica") != null) {
@@ -130,7 +130,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
 	    	 int rigaSel= Integer.parseInt(request.getParameter("sel"));
 	    	 Persona contatto= tabella.getContatto(rigaSel);
 			 request.setAttribute("contatto", contatto);
-	    	 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaEditorMod");
+	    	 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/PaginaEditorModBS");
 			 dispatcher.forward(request, response);
 	    	 } catch (Exception e) {
 	    		 doRequest(request, response);
