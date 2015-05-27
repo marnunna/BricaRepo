@@ -54,7 +54,7 @@ public class PaginaEditorMod extends HttpServlet {
 			out.append("<body>");
 			out.append("	<h1>Editor</h1>");
 			out.append("	<div id=\"container\">");
-			out.append(" 	<form id=\"fed\" name=\"fed\" method=\"post\" action=\"PaginaEditor\"> ");
+			out.append(" 	<form id=\"fedm\" name=\"fedm\" method=\"post\" action=\"PaginaEditorMod\"> ");
 			
 			out.append("		<table id=\"editor\">");
 			
