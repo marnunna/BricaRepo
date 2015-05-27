@@ -77,9 +77,9 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("			</table>");
 			
 			
-			out.append(" <p id=\"pulsanti\"> <input type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
-					 + " <input type=\"submit\" name=\"modifica\" value=\"modifica\"> "
-					 + " <input type=\"submit\" name=\"elimina\" value=\"elimina\"> </p> ");
+			out.append(" <p id=\"pulsanti\"> <input class=\"button\" type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
+					 + " <input class=\"button\" type=\"submit\" name=\"modifica\" value=\"modifica\"> "
+					 + " <input class=\"button\" type=\"submit\" name=\"elimina\" value=\"elimina\"> </p> ");
 			
 			
 			out.append("	</form>"
