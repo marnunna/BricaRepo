@@ -44,7 +44,7 @@ h1 {
 }
 
 .sel {
-	width:auto;
+	width:20%;
 	margin:auto;
 }
 
@@ -57,7 +57,7 @@ h1 {
 
 .button {
 	position:relative;
-	left:285;
-	width:35px;
+	left:285px;
+	width:150px;
 }
 
