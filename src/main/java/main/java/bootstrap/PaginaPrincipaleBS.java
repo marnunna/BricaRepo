@@ -83,13 +83,13 @@ public class PaginaPrincipaleBS extends HttpServlet {
 			
 			out.append("	<div class=\"container\">");
 			out.append("	<div class=\"row\">");
-			out.append("	<div class=\"col-md-4\"></div>");
-			out.append("	<div class=\"col-md-4\">");
+			out.append("	<div class=\"col-md-2\"></div>");
+			out.append("	<div class=\"col-md-3\">");
 			out.append("	<input class=\"button\" type=\"submit\" name=\"nuovo\" value=\"nuovo\" > "
 					 + "	<input class=\"button\" type=\"submit\" name=\"modifica\" value=\"modifica\"> "
 					 + "	<input class=\"button\" type=\"submit\" name=\"elimina\" value=\"elimina\"> ");
 			out.append("	</div>");
-			out.append("	</div class=\"col-md-4\"></div>");
+			out.append("	</div class=\"col-md-7\"></div>");
 			out.append("	</div>");
 			out.append("	</div>");
 			
