@@ -1,8 +1,13 @@
 @CHARSET "ISO-8859-1";
 
-div {
-	position:absolute;
-	left:300px;
+h1 {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.container {
+	margin-left:auto;
+	margin-right:auto;
 }
 
 td {
