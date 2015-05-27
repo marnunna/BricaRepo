@@ -51,7 +51,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
 			out.append("	<link href=\"css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">");
 			out.append("</head>");
 			out.append("<body>");
-			out.append("	<h1>Brica la Rubrica condivisa</h1>");
+			out.append("	<h1 class=\"text-center\">Brica la Rubrica condivisa</h1>");
 			out.append("	<div class=\"container\">");
 			out.append("	<div class=\"row\">");
 			out.append("	<div class=\"col-md-3\"></div>");
