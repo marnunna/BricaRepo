@@ -75,7 +75,7 @@ public class PaginaEditorMod extends HttpServlet {
 					 + "			</tr>");
 			
 			out.append("			<tr><td>Età</td>");
-			out.append("				<td><input id=\"txt_e\" name=\"eta\" type=\"text\" /> value=\""+valEta+"\" /> </td> "
+			out.append("				<td><input id=\"txt_e\" name=\"eta\" type=\"text\" value=\""+valEta+"\" /> </td> "
 					 + "			</tr>");
 			
 			out.append("		</table");
