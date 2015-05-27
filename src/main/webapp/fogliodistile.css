@@ -58,14 +58,10 @@ table td {
 	width:150px;
 }
 
-#pulsantiEd {
-	position:relative;
-	top:200px;
-	left:300px;	
-}
-
 .buttonEd {	
 	width:150px;
+	position:relative;
+	top:30px;
 }
 
 input[type="text"] {
