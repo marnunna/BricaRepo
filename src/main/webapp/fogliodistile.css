@@ -6,10 +6,12 @@ body {
 
 h1 {
     font-family:Arial;
+    text-aling:center;
 }
 
 #container {
-	
+	width:70%;
+	margin:auto;
 }
 
 
@@ -42,6 +44,5 @@ h1 {
 }
 
 #pulsanti{
-	padding-left: auto;
-	padding-rigth: auto;	
+	aling-content:center;	
 }
