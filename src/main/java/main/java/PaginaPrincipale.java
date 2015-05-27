@@ -46,11 +46,11 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("<!DOCTYPE html>");
 			out.append("<html>");
 			out.append("<head>");
-			out.append("	<title>Brica la Rubrica</title>");
+			out.append("	<title>Brica</title>");
 			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
 			out.append("</head>");
 			out.append("<body>");
-			out.append("	<h1>Brica la Rubrica</h1>");
+			out.append("	<h1>Brica la Rubrica condivisa</h1>");
 			out.append("	<div id=\"container\">");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
 			out.append("		<table id=\"contatti\">");
@@ -77,9 +77,11 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("			</table>");
 			
 			
-			out.append(" <div id=\"pulsanti\"> <input class=\"button\" type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
-					 + " <input class=\"button\" type=\"submit\" name=\"modifica\" value=\"modifica\"> "
-					 + " <input class=\"button\" type=\"submit\" name=\"elimina\" value=\"elimina\"> </div> ");
+			out.append(" <div id=\"pulsanti\"> "
+					 + "	<input class=\"button\" type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
+					 + "	<input class=\"button\" type=\"submit\" name=\"modifica\" value=\"modifica\"> "
+					 + "	<input class=\"button\" type=\"submit\" name=\"elimina\" value=\"elimina\"> "
+					 + " </div> ");
 			
 			
 			out.append("	</form>"

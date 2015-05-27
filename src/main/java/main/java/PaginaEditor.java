@@ -33,22 +33,56 @@ public class PaginaEditor extends HttpServlet {
     
     protected void doRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	response.setContentType("text/html;charset=UTF-8");
+    	
+    	
    	
 		try ( PrintWriter out = response.getWriter()) {
 			
 			//out.append("<p>Lavori in corso...</p>");	
-			out.append("<html><body>");
-			out.append(" <form id=\"fed\" name=\"fed\" method=\"post\" action=\"PaginaEditor\"> ");
-			out.append("<p>Nome <input id=\"txt_n\" name=\"nome\" type=\"text\" /> </p>");
-			out.append("<p>Cognome <input id=\"txt_c\" name=\"cognome\" type=\"text\" /> </p>");
-			out.append("<p>Telefono <input id=\"txt_t\" name=\"telefono\" type=\"text\" /> </p>");
-			out.append("<p>Indirizzo <input id=\"txt_t\" name=\"indirizzo\" type=\"text\" /> </p>");
-			out.append("<p>Età <input id=\"txt_t\" name=\"eta\" type=\"text\" /> </p>");
+			out.append("<!DOCTYPE html>");
+			out.append("<html>");
+			out.append("<head>");
+			out.append("	<title>Brica la Rubrica</title>");
+			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
+			out.append("</head>");
+			out.append("<body>");
+			out.append("	<h1>Editor</h1>");
+			out.append("	<div id=\"container\">");
+			out.append(" 	<form id=\"fed\" name=\"fed\" method=\"post\" action=\"PaginaEditor\"> ");
 			
-			out.append(" <p> <input type=\"submit\" name=\"salva\" value=\"salva\"> "
-					 + " 	 <input type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
+			out.append("		<table id=\"editor\">");
 			
-			out.append("</form></html></body>");
+			out.append("			<tr><td>Nome</td>");
+			out.append("				<td><input id=\"txt_n\" name=\"nome\" type=\"text\" /> </td> "
+					 + "			</tr>");
+			
+			out.append("			<tr><td>Cognome</td>");
+			out.append("				<td><input id=\"txt_c\" name=\"cognome\" type=\"text\" /> </td> "
+					 + "			</tr>");
+			
+			out.append("			<tr><td>Telefono</td>");
+			out.append("				<td><input id=\"txt_t\" name=\"telefono\" type=\"text\" /> </td> "
+					 + "			</tr>");
+			
+			out.append("			<tr><td>Indirizzo</td>");
+			out.append("				<td><input id=\"txt_i\" name=\"indirizzo\" type=\"text\" /> </td> "
+					 + "			</tr>");
+			
+			out.append("			<tr><td>Età</td>");
+			out.append("				<td><input id=\"txt_e\" name=\"eta\" type=\"text\" /> </td> "
+					 + "			</tr>");
+			
+			out.append("		</table");
+			
+			out.append(" 		<div id=\"pulsanti\"> 	"
+					+ "				<input class=\"button\" type=\"submit\" name=\"salva\" value=\"salva\"> "
+					 + " 	 		<input class=\"button\" type=\"submit\" name=\"annulla\" value=\"annulla\"> "
+					 + " 		</div>");
+			
+			out.append("	</form>"
+					+  "	</div>"
+					+  "</html>"
+					+  "</body>");
 			
 		} catch (Exception e) {
 			
