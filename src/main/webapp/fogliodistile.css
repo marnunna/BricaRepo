@@ -51,13 +51,10 @@ h1 {
 #pulsanti{
 	position: relative;
 	top:30px;
-	width:50%;
-	margin:auto;	
+	left:300px;	
 }
 
-/*.button {
-	position:relative;
-	left:300px;
+.button {	
 	width:150px;
-}*/
+}
 
