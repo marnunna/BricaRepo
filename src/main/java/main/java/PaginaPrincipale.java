@@ -78,7 +78,7 @@ public class PaginaPrincipale extends HttpServlet {
 			
 			
 			out.append(" <div id=\"pulsanti\"> "
-					 + "	<input class=\"button\" type=\"submit\" name=\"nuovo\" value=\"nuovo\"> "
+					 + "	<input class=\"button\" type=\"submit\" name=\"nuovo\" value=\"nuovo\" > "
 					 + "	<input class=\"button\" type=\"submit\" name=\"modifica\" value=\"modifica\"> "
 					 + "	<input class=\"button\" type=\"submit\" name=\"elimina\" value=\"elimina\"> "
 					 + " </div> ");

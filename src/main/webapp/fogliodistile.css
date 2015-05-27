@@ -10,7 +10,7 @@ h1 {
 }
 
 #container {
-	width:auto;
+	width:70%;
 	margin:auto;
 }
 
@@ -59,13 +59,13 @@ table td {
 }
 
 #pulsantiEd {
-	position: relative;
-	top:100px;
+	position:relative;
+	top:200px;
 	left:300px;	
 }
 
 .buttonEd {	
-	width:400px;
+	width:150px;
 }
 
 input[type="text"] {
