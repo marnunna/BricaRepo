@@ -69,5 +69,5 @@ input[type="text"] {
 }
 
 editor td, editor th {
-    border:none;
+    border-style:none;
 }
