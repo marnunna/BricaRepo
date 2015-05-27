@@ -60,6 +60,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
 			out.append("		<table class=\"table\">");
 			out.append(" 		<thead> <tr> <th>Selezione</th> <th>Nome</th> <th>Cognome</th> <th>Telefono</th> </tr> </thead>");
 			out.append("		<tbody>");
+			
 			for (int i=0 ; i < lista.size(); i++) {
 				
 				Persona contatto = lista.get(i);
