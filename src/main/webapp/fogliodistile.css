@@ -1,5 +1,9 @@
 @CHARSET "ISO-8859-1";
 
+div {
+	margin-left: auto;
+    margin-right: auto;
+}
 
 td {
 	width: 100px;
