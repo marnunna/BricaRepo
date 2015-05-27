@@ -1,13 +1,12 @@
 @CHARSET "ISO-8859-1";
 
 h1 {
-	width: 50%;
-	margin-left: auto;
-    margin-right: auto;
+	text-align:center;
     font-family:Arial;
 }
 
 #container {
+	width: 50%;
 	margin-left:auto;
 	margin-right:auto;
 }
