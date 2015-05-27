@@ -50,10 +50,10 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
 			out.append("</head>");
 			out.append("<body>");
-			out.append("<h1>Brica la Rubrica</h1>");
-			out.append("	<div class=\"container\">");
+			out.append("	<h1>Brica la Rubrica</h1>");
+			out.append("	<div id=\"container\">");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
-			out.append("		<table border=\"1\">");
+			out.append("		<table id=\"contatti\">");
 			out.append(" <tr> <th>Selezione</th> <th>Nome</th> <th>Cognome</th> <th>Telefono</th> </tr>");
 			
 			for (int i=0 ; i < lista.size(); i++) {
