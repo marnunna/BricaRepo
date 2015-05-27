@@ -1,8 +1,7 @@
 @CHARSET "ISO-8859-1";
 
 div {
-	margin-left: auto;
-	margin-rigth: auto;
+	float: center;
 }
 
 td {
