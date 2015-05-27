@@ -68,6 +68,6 @@ input[type="text"] {
 	width:300px;
 }
 
-editor td, editor th {
-    border-style:none;
+#editor td{
+    border: none;
 }
