@@ -58,3 +58,6 @@ table td {
 	width:150px;
 }
 
+input[type="text"] {
+	width:300px;
+}
