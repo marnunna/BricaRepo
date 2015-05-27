@@ -46,14 +46,15 @@ public class PaginaPrincipale extends HttpServlet {
 			out.append("<!DOCTYPE html>");
 			out.append("<html>");
 			out.append("<head>");
-			out.append("	<title>Brica La Rubrica</title>");
+			out.append("	<title>Brica la Rubrica</title>");
 			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
 			out.append("</head>");
 			out.append("<body>");
+			out.append("<h1>Brica la Rubrica</h1>");
 			out.append("	<div>");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipale\"> ");
 			out.append("		<table border=\"1\">");
-			out.append(" <tr> <th>Selezione</th> <th></th> <th>Nome</th> <th>Cognome</th> <th>Telefono</th> </tr>");
+			out.append(" <tr> <th>Selezione</th> <th>Nome</th> <th>Cognome</th> <th>Telefono</th> </tr>");
 			
 			for (int i=0 ; i < lista.size(); i++) {
 				
