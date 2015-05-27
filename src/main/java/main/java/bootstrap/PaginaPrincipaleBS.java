@@ -57,9 +57,9 @@ public class PaginaPrincipaleBS extends HttpServlet {
 			out.append("	<div class=\"col-md-3\"></div>");
 			out.append("	<div class=\"col-md-6\">");
 			out.append("	<form id=\"f\" name=\"f\" method=\"post\" action=\"PaginaPrincipaleBS\"> ");
-			out.append("		<table id=\"contatti\">");
-			out.append(" <tr> <th>Selezione</th> <th>Nome</th> <th>Cognome</th> <th>Telefono</th> </tr>");
-			
+			out.append("		<table class=\"table\">");
+			out.append(" 		<thead> <tr> <th>Selezione</th> <th>Nome</th> <th>Cognome</th> <th>Telefono</th> </tr> </thead>");
+			out.append("		<tbody>");
 			for (int i=0 ; i < lista.size(); i++) {
 				
 				Persona contatto = lista.get(i);
@@ -77,7 +77,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
 	       		
 	       		
 			}  
-			
+			out.append("		</tbody>");
 			out.append("			</table>");
 			
 			

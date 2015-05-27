@@ -48,8 +48,9 @@ public class PaginaEditorModBS extends HttpServlet {
 			out.append("<!DOCTYPE html>");
 			out.append("<html>");
 			out.append("<head>");
-			out.append("	<title>Brica la Rubrica</title>");
-			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
+			out.append("	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+			out.append("	<title>Brica</title>");
+			out.append("	<link href=\"css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">");
 			out.append("</head>");
 			out.append("<body>");
 			out.append("	<h1>Editor</h1>");
