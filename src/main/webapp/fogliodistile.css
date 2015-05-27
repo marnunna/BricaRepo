@@ -6,7 +6,7 @@ body {
 
 h1 {
     font-family:Arial;
-    text-aling:center;
+    text-align:center;
 }
 
 #container {
@@ -43,6 +43,12 @@ h1 {
 	background-color: white;
 }
 
+.sel {
+	width:70%;
+	margin:auto;
+}
+
 #pulsanti{
-	aling-content:center;	
+	width:70%;
+	margin:auto;	
 }
