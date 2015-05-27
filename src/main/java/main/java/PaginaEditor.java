@@ -74,9 +74,9 @@ public class PaginaEditor extends HttpServlet {
 			
 			out.append("		</table");
 			
-			out.append(" 		<div id=\"pulsanti\"> 	"
-					+ "				<input class=\"button\" type=\"submit\" name=\"salva\" value=\"salva\"> "
-					 + " 	 		<input class=\"button\" type=\"submit\" name=\"annulla\" value=\"annulla\"> "
+			out.append(" 		<div id=\"pulsantiEd\"> 	"
+					+ "				<input class=\"buttonEd\" type=\"submit\" name=\"salva\" value=\"salva\"> "
+					 + " 	 		<input class=\"buttonEd\" type=\"submit\" name=\"annulla\" value=\"annulla\"> "
 					 + " 		</div>");
 			
 			out.append("	</form>"
