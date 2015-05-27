@@ -44,13 +44,13 @@ h1 {
 }
 
 .sel {
-	width:90%;
+	width:auto;
 	margin:auto;
 }
 
 #pulsanti{
 	position: relative;
 	top:30px;
-	width:90%;
+	width:auto;
 	margin:auto;	
 }
