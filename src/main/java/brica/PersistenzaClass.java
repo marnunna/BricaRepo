@@ -1,6 +1,8 @@
 package brica;
 
 import main.java.*;
+import main.java.bootstrap.PaginaPrincipaleBS;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -74,6 +76,7 @@ public class PersistenzaClass {
 				
 				
 				PaginaPrincipale.tabella.contatti.add(nuovoContatto);
+				PaginaPrincipaleBS.tabella.contatti.add(nuovoContatto);
 				
 				
 			}
