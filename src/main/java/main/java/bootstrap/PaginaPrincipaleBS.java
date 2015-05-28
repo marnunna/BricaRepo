@@ -92,7 +92,6 @@ public class PaginaPrincipaleBS extends HttpServlet {
 			out.append("	</div class=\"col-md-2\"></div>");
 			out.append("	</div>");
 			
-			
 			out.append("	</form>"
 					+ "</div>"
 					+ "<div class=\"col-md-3\"></div>"

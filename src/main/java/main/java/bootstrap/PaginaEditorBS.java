@@ -55,7 +55,7 @@ public class PaginaEditorBS extends HttpServlet {
 			out.append("	<div class=\"col-md-4\"></div>");
 			out.append("	<div class=\"col-md-6\">");
 			out.append(" 	<form id=\"fed\" name=\"fed\" method=\"post\" action=\"PaginaEditorBS\"> ");
-			
+			out.append("    <fieldset>");
 			out.append("		<table id=\"table\">");
 			out.append("		<tbody>");
 			
@@ -91,6 +91,7 @@ public class PaginaEditorBS extends HttpServlet {
 			out.append("	</div class=\"col-md-3\"></div>");
 			out.append("	</div>");
 			
+			out.append("    </fieldset>");
 			out.append("	</form>"
 					+ "</div>"
 					+ "<div class=\"col-md-3\"></div>"
