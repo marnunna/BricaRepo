@@ -45,6 +45,7 @@ public class PaginaEditorBS extends HttpServlet {
 			out.append("	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
 			out.append("	<title>Brica</title>");
 			out.append("	<link href=\"css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">");
+			out.append("	<link href=\"complementareBS.css\" rel=\"stylesheet\" media=\"screen\">");
 			out.append("</head>");
 			out.append("<body>");
 			out.append("<body>");
