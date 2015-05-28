@@ -77,6 +77,10 @@ img {
 	width: 300px;
 }
 
+cs {
+	position:relative;
+	top:35px;
+}
 indiv {
 	margin:auto;
 }
