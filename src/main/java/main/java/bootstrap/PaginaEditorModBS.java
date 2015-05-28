@@ -57,7 +57,7 @@ public class PaginaEditorModBS extends HttpServlet {
 			out.append("	<h1 class=\"text-center\">Editor</h1>");
 			out.append("	<div class=\"container\">");
 			out.append("	<div class=\"row\">");
-			out.append("	<div class=\"col-md-3\"></div>");
+			out.append("	<div class=\"col-md-4\"></div>");
 			out.append("	<div class=\"col-md-6\">");
 			out.append(" 	<form id=\"fedm\" name=\"fedm\" method=\"post\" action=\"PaginaEditorModBS\"> ");
 			
@@ -65,33 +65,33 @@ public class PaginaEditorModBS extends HttpServlet {
 			out.append("		<tbody>");
 			
 			out.append("			<tr><td>Nome</td>");
-			out.append("				<td><input id=\"txt_n\" name=\"nome\" type=\"text\" value=\""+valNome+"\" /> </td> "
+			out.append("				<td><input id=\"txt_n\" class=\"form-control\" name=\"nome\" type=\"text\" value=\""+valNome+"\" /> </td> "
 					 + "			</tr>");
 			
 			out.append("			<tr><td>Cognome</td>");
-			out.append("				<td><input id=\"txt_c\" name=\"cognome\" type=\"text\" value=\""+valCognome+"\" /> </td> "
+			out.append("				<td><input id=\"txt_c\" class=\"form-control\" name=\"cognome\" type=\"text\" value=\""+valCognome+"\" /> </td> "
 					 + "			</tr>");
 			
 			out.append("			<tr><td>Telefono</td>");
-			out.append("				<td><input id=\"txt_t\" name=\"telefono\" type=\"text\" value=\""+valTelefono+"\" /> </td> "
+			out.append("				<td><input id=\"txt_t\" class=\"form-control\" name=\"telefono\" type=\"text\" value=\""+valTelefono+"\" /> </td> "
 					 + "			</tr>");
 			
 			out.append("			<tr><td>Indirizzo</td>");
-			out.append("				<td><input id=\"txt_i\" name=\"indirizzo\" type=\"text\" value=\""+valIndirizzo+"\" /> </td> "
+			out.append("				<td><input id=\"txt_i\" class=\"form-control\" name=\"indirizzo\" type=\"text\" value=\""+valIndirizzo+"\" /> </td> "
 					 + "			</tr>");
 			
 			out.append("			<tr><td>Età</td>");
-			out.append("				<td><input id=\"txt_e\" name=\"eta\" type=\"text\" value=\""+valEta+"\" /> </td> "
+			out.append("				<td><input id=\"txt_e\" class=\"form-control\" name=\"eta\" type=\"text\" value=\""+valEta+"\" /> </td> "
 					 + "			</tr>");
 			
 			out.append("		</tbody>");
 			out.append("			</table>");
 			
 			out.append("	<div class=\"row\">");
-			out.append("	<div class=\"col-md-3\"></div>");
+			out.append("	<div class=\"col-md-2\"></div>");
 			out.append("	<div class=\"col-md-6\">");
-			out.append("	<input class=\"btn btn-default\" type=\"submit\" name=\"salva\" value=\"salva\"> "
-					 + " 	<input class=\"btn btn-default\" type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
+			out.append("	<input class=\"btn btn-success\" type=\"submit\" name=\"salva\" value=\"salva\"> "
+					 + " 	<input class=\"btn btn-success\" type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
 			out.append("	</div>");
 			out.append("	</div class=\"col-md-3\"></div>");
 			out.append("	</div>");
