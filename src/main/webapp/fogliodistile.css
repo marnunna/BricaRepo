@@ -73,8 +73,10 @@ input[type="text"] {
     background-color: #F0F0F0;
 }
 
-.index {
-	position: relative;
-	top: 50px;
-	left: 300px;
+img {
+	width: 300px;
+}
+
+indiv {
+	margin:auto;
 }
