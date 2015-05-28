@@ -85,8 +85,8 @@ public class PaginaEditorBS extends HttpServlet {
 			out.append("	<div class=\"row\">");
 			out.append("	<div class=\"col-md-2\"></div>");
 			out.append("	<div class=\"col-md-6\">");
-			out.append("	<input class=\"btn btn-success\" type=\"submit\" name=\"salva\" value=\"salva\"> "
-					 + " 	<input class=\"btn btn-success\" type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
+			out.append("	<input class=\"btn btn-success\" class=\"bottoni\" type=\"submit\" name=\"salva\" value=\"salva\"> "
+					 + " 	<input class=\"btn btn-success\" class=\"bottoni\" type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
 			out.append("	</div>");
 			out.append("	</div class=\"col-md-3\"></div>");
 			out.append("	</div>");
