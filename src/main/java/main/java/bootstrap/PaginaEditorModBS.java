@@ -53,11 +53,16 @@ public class PaginaEditorModBS extends HttpServlet {
 			out.append("	<link href=\"css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">");
 			out.append("</head>");
 			out.append("<body>");
-			out.append("	<h1>Editor</h1>");
-			out.append("	<div id=\"container\">");
+			out.append("<body>");
+			out.append("	<h1 class=\"text-center\">Editor</h1>");
+			out.append("	<div class=\"container\">");
+			out.append("	<div class=\"row\">");
+			out.append("	<div class=\"col-md-3\"></div>");
+			out.append("	<div class=\"col-md-6\">");
 			out.append(" 	<form id=\"fedm\" name=\"fedm\" method=\"post\" action=\"PaginaEditorModBS\"> ");
 			
 			out.append("		<table id=\"editor\">");
+			out.append("		<tbody>");
 			
 			out.append("			<tr><td>Nome</td>");
 			out.append("				<td><input id=\"txt_n\" name=\"nome\" type=\"text\" value=\""+valNome+"\" /> </td> "
@@ -79,17 +84,25 @@ public class PaginaEditorModBS extends HttpServlet {
 			out.append("				<td><input id=\"txt_e\" name=\"eta\" type=\"text\" value=\""+valEta+"\" /> </td> "
 					 + "			</tr>");
 			
-			out.append("		</table");
+			out.append("		</tbody>");
+			out.append("			</table>");
 			
-			out.append(" 		<div id=\"pulsantiEd\"> 	"
-					+ "				<input class=\"buttonEd\" type=\"submit\" name=\"salva\" value=\"salva\"> "
-					 + " 	 		<input class=\"buttonEd\" type=\"submit\" name=\"annulla\" value=\"annulla\"> "
-					 + " 		</div>");
+			out.append("	<div class=\"row\">");
+			out.append("	<div class=\"col-md-3\"></div>");
+			out.append("	<div class=\"col-md-6\">");
+			out.append("	<input class=\"buttonEd\" type=\"submit\" name=\"salva\" value=\"salva\"> "
+					 + " 	<input class=\"buttonEd\" type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
+			out.append("	</div>");
+			out.append("	</div class=\"col-md-3\"></div>");
+			out.append("	</div>");
 			
 			out.append("	</form>"
-					+  "	</div>"
-					+  "</html>"
-					+  "</body>");
+					+ "</div>"
+					+ "<div class=\"col-md-3\"></div>"
+					+ "</div>"
+					+ "</div>"
+					+ "</body>"
+					+ "</html>");
 			
 		}  catch (Exception e) {
 			

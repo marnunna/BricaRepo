@@ -42,15 +42,21 @@ public class PaginaEditorBS extends HttpServlet {
 			out.append("<!DOCTYPE html>");
 			out.append("<html>");
 			out.append("<head>");
-			out.append("	<title>Brica la Rubrica</title>");
-			out.append("	<link type=\"text/css\" rel=\"stylesheet\" href=\"fogliodistile.css\" />");
+			out.append("	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+			out.append("	<title>Brica</title>");
+			out.append("	<link href=\"css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">");
 			out.append("</head>");
 			out.append("<body>");
-			out.append("	<h1>Editor</h1>");
-			out.append("	<div id=\"container\">");
+			out.append("<body>");
+			out.append("	<h1 class=\"text-center\">Editor</h1>");
+			out.append("	<div class=\"container\">");
+			out.append("	<div class=\"row\">");
+			out.append("	<div class=\"col-md-3\"></div>");
+			out.append("	<div class=\"col-md-6\">");
 			out.append(" 	<form id=\"fed\" name=\"fed\" method=\"post\" action=\"PaginaEditorBS\"> ");
 			
-			out.append("		<table id=\"editor\">");
+			out.append("		<table id=\"table\">");
+			out.append("		<tbody>");
 			
 			out.append("			<tr><td>Nome</td>");
 			out.append("				<td><input id=\"txt_n\" name=\"nome\" type=\"text\" /> </td> "
@@ -72,17 +78,25 @@ public class PaginaEditorBS extends HttpServlet {
 			out.append("				<td><input id=\"txt_e\" name=\"eta\" type=\"text\" /> </td> "
 					 + "			</tr>");
 			
-			out.append("		</table");
+			out.append("		</tbody>");
+			out.append("			</table>");
 			
-			out.append(" 		<div id=\"pulsantiEd\"> 	"
-					+ "				<input class=\"buttonEd\" type=\"submit\" name=\"salva\" value=\"salva\"> "
-					 + " 	 		<input class=\"buttonEd\" type=\"submit\" name=\"annulla\" value=\"annulla\"> "
-					 + " 		</div>");
+			out.append("	<div class=\"row\">");
+			out.append("	<div class=\"col-md-3\"></div>");
+			out.append("	<div class=\"col-md-6\">");
+			out.append("	<input class=\"buttonEd\" type=\"submit\" name=\"salva\" value=\"salva\"> "
+					 + " 	<input class=\"buttonEd\" type=\"submit\" name=\"annulla\" value=\"annulla\"> ");
+			out.append("	</div>");
+			out.append("	</div class=\"col-md-3\"></div>");
+			out.append("	</div>");
 			
 			out.append("	</form>"
-					+  "	</div>"
-					+  "</html>"
-					+  "</body>");
+					+ "</div>"
+					+ "<div class=\"col-md-3\"></div>"
+					+ "</div>"
+					+ "</div>"
+					+ "</body>"
+					+ "</html>");
 			
 		} catch (Exception e) {
 			
