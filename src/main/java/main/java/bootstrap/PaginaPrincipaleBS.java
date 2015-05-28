@@ -22,7 +22,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	public static ModelloTabellaContatti tabella;
-	static PersistenzaClass pc;	
+	static PersistenzaClassBS pc;	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -37,7 +37,7 @@ public class PaginaPrincipaleBS extends HttpServlet {
     	response.setContentType("text/html;charset=UTF-8");
     	
     	tabella = new ModelloTabellaContatti();
-    	pc = new PersistenzaClass();
+    	pc = new PersistenzaClassBS();
     	pc.daDbALista();
     	Vector<Persona> lista = tabella.contatti;
     			

@@ -18,7 +18,7 @@ import java.util.Vector;
 
 
 
-public class PersistenzaClass {
+public class PersistenzaClassBS {
     public static final String USERNAME = System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
     public static final String PASSWORD = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
     public static final String HOST = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
@@ -75,7 +75,8 @@ public class PersistenzaClass {
 				nuovoContatto.setEta(eta);
 				
 				
-				PaginaPrincipale.tabella.contatti.add(nuovoContatto);				
+				PaginaPrincipaleBS.tabella.contatti.add(nuovoContatto);
+				
 				
 			}
 		
@@ -128,7 +129,7 @@ public class PersistenzaClass {
 				statement = connection.prepareStatement("truncate contatti;");
 				statement.executeUpdate();
 				//Vector<Persona> lista = Main.tabella.getModel().contatti;
-				Vector<Persona> lista = PaginaPrincipale.tabella.contatti;
+				Vector<Persona> lista = PaginaPrincipaleBS.tabella.contatti;
 				for (int i = 0; i < lista.size(); i++) {
 					
 					Persona contatto = lista.get(i);
